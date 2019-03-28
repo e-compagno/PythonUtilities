@@ -2,8 +2,7 @@
 #Author: Enrico Compagno
 #Version: 0.1.0
 #todo:
-#1. Add exception for non existing file 
-#2. Add function to add files
+#1. Add function to add files
 
 import os
 
@@ -39,9 +38,10 @@ class FileContainer():
     def __str__(self):
         print('\nFile list:')
         print('----------')
+        print('Idx\tFilename')
         file_list = ''
         for idx,val in enumerate(self.filedic):
-            str_to_append = '{0}: {1}\n'.format(idx,self.filedic[val][0])
+            str_to_append = '{0}\t{1}\n'.format(idx,self.filedic[val][0])
             file_list = file_list + str_to_append
 
         return file_list

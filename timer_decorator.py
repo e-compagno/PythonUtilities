@@ -18,9 +18,16 @@ def timer(func):
         return result
 
     return wrapper
-
+    
 @timer
 def wait_time(n_sec):
+    """Function that wait n_seconds
+
+    Args:
+        n_sec (int): Number of seconds to wait
+    """
     time.sleep(n_sec)
 
 wait_time(1)
+
+print(wait_time.__doc__)

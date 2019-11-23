@@ -1,6 +1,7 @@
 """
 Title: Timer decorator
-Author: Enrico Compagno
+
+A decorator to evaluate the time need to execute a function.
 """
 
 from functools import wraps
